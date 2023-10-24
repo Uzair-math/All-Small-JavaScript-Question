@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>execution context</title>
+</head>
+<body>
+    <script>
+
+        // Example 1
+
+    //    function name(a,b) {
+    //     var result=a+b;
+    //     return result;
+    //    }
+    //    console.log(name(3,4));
+
+    // Example 2
+    // var name =prompt("what is your name?");
+    // console.log("hello " + name + "!");
+    // This "prompt()" method is used to javascript code that asks the user to input the name store the value of function.
+    // for example if the user enetered "uzair" when prompted for their name the output to the console would be "hello Uzair!".
+
+    // example 3
+
+    // function name(celsius) {
+    //     var fahrenheit = (celsius * 9/5)+32;
+    //     return fahrenheit;
+    // }
+    // console.log(name(3));
+    // the celsius temperture value is converted to fahrenheit by the formula.
+    // (multiplying by 9/5) + 32       Fahrenheit
+    // The function with an argument of 3 represents a tempreture value in celsius. 
+    // They return (37.4) is printed.
+
+    // Example 4
+    
+    // function name(n) {
+    //     if (n===1) {
+    //         return true;
+    //     }
+    //     else{
+    //         console.log(n);
+    //         return n* name(n-1);
+
+    //     }
+    // }
+    // console.log(name(5));
+
+    // This example of a recursive function in javascript. The function factorial takes a parameter n.
+    // The function calculate the factorial of the given number by multiplying.
+    // if we call the factorial function with an argument 5 first check n is equal to 1 then return true.
+    // the output of the function 120. which is product of function 54321.
+
+    // example 4
+    // let x=10;
+    // function name(a) {
+    //     return a * 20;
+    // }
+    // let y=name(x);
+    // console.log(y);
+
+    // this example a function return a value that is stored in a variable.
+    // a is variable x is initialized with a value of 10. Then a function name is declear with parameter a.
+    // next the function name is called with the argument "x". 
+    // the output of the function 200 is stored in a variable y.
+
+    // example 5
+    // function name() {
+    //     var a=1;
+    //     function hello() {
+    //         var b=2;
+    //         return a + b;
+    //     }
+    //     return hello();
+    // }
+    // console.log(name());
+
+    // This method is used to nested function execution context inside the "name" function "hello" 
+    // is decleared when the hello function is called a new nested function exection context is created
+    // This execution context also has its own memory space to store variable and fucntion declearation. 
+    // the output of the function is 3. They used to nested function.
+
+    // Example 6
+    // const n=5;
+    // for (let i = 0; i <=n; i++) {
+    //     console.log("I love pakistan");
+    // }
+//     var d = 20;
+// let a = [1,2,3,4,5]
+// let b = a.push(0,2)
+// setTimeout (() => {
+//   console.log("Hello world")
+// })
+// console.log(b)
+// console.log(d)
+
+// looping from i= 1 to n
+// in each iteration, i is increased by 1
+
+// // Example 7
+// let sum=0 
+// const n=100;
+// for (let i = 0; i <=n; i++) {
+//     sum += i;
+//     // sum = sum + i
+// } 
+// console.log('sum:', sum);
+
+//   A variable is store to sum=0; they n is undefined Other variable store the value of 100. They n=100 is global scope. 
+// They loop is executing context is block scope of the function. They i is less than or equal to n number of variable.
+// They will sum is equal to sum + i. They will console to 'sum', sum is multiply of number n.
+    // n is number of 5;
+    // i is block scope. they let i = undefined;  script: 5; i<=5 they block scope to execute to increment of the number.
+    // i is the number 0 then console.log script will be n:5. They will return to 5 number of "I love pakistan"
+// // Example 9
+//     {
+//         let x=20;
+//         console.log(x);
+//     }
+// Example 10
+    // {
+    //     let x=20;
+    // }
+    // console.log(x);
+
+
+    </script>
+</body>
+</html>
